@@ -1,0 +1,2304 @@
+*{
+    margin:0;
+    box-sizing: border-box;
+}
+:root {
+  --maincolor: #0d6efd;
+}
+body {
+  background-color: #ffffff;
+  
+}
+h1{
+  font-family: "Montserrat", sans-serif;
+}
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+}
+
+h3 {
+  font-family: "Montserrat", sans-serif;
+}
+
+h4 {
+  font-family: "Montserrat", sans-serif;
+}
+
+h5 {
+  font-family: "Montserrat", sans-serif;
+}
+
+h6 {
+  font-family: "Montserrat", sans-serif;
+}
+
+p {
+  font-family: "Poppins", sans-serif;
+}
+
+span{
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  font-family: "Poppins", sans-serif;
+}
+/* main style */
+.sec-head {
+ margin: 0px 0px 64px;
+}
+.sec-head h3 {
+  font-size: 39px;
+  position: relative;
+  text-align: center;
+  font-weight: 900;
+  z-index: 32;
+}
+.sec-head h3::after{
+  content: "";
+  width: 200px;
+  height: 50%;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  background-image: url(../img/dots.png);
+  background-repeat: repeat;
+  z-index: -1;
+
+}
+@media (max-width: 315px) {
+  .sec-head h3 {
+    font-size: 25px;
+   
+  }
+  .sec-head h3::after{
+    
+    width: 140px;
+    
+  
+  }
+}
+
+.navbar-nav .nav-link.show {
+  color: #fff;
+}
+
+
+
+/* main style */
+/* nav-start */
+nav {
+    background-color: transparent;
+    transition: all 0.3s ease;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+}
+
+nav.scrolled {
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav.scrolled .navbar-nav .nav-link,
+nav.scrolled .navbar-brand,
+nav.scrolled .navbar-toggler i {
+    color: #000 !important;
+}
+
+nav.scrolled .navbar-nav .nav-link.active::after {
+    background-color: #000;
+
+}
+
+
+
+@media (min-width: 1400px) {
+  .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    max-width: 1140px;
+  }
+}
+ nav .navbar {
+  padding: 20px 0;
+
+}
+nav .navbar-nav .nav-link.active{
+  color: #fff;
+  
+}
+nav .navbar-brand {
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-family: "Montserrat", sans-serif;
+}
+nav .navbar-nav .nav-link{
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  position: relative;
+}
+nav .navbar-expand-lg .navbar-nav a {
+  position: relative;
+  
+}
+
+
+nav .nav-item {
+  padding: 0px 12px;
+}
+
+
+nav .navbar-nav .nav-link.active::after
+ {
+content: " ";
+width: 70%;
+height:4%;
+background-color: #fff;
+position: absolute;
+bottom: 8px;
+left: 14.7%;
+}
+
+@media (max-width: 768px) {
+  nav.scrolled .navbar-nav .nav-link.active::after {
+    width: 9%;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+nav .navbar-nav .nav-link.active::after
+ {
+  width: 9%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+nav .navbar-collapse {
+  border-top: 1px solid #e7e7e7;
+  }
+  
+
+
+}
+
+
+
+
+
+
+ 
+  
+
+
+/* nav-end */
+/* home-start */
+#home{
+    height: 100vh;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)),url(../img/bg.jpg);
+    background-position: center;
+    background-attachment :fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+@media  screen and (max-width: 1024px) {
+  #home {
+    background-attachment :scroll;
+  }
+
+}
+
+
+
+.typing-text {
+  display: inline-block;
+  overflow: hidden;
+  width: 100%;
+  white-space: nowrap;
+  border-right: 2px solid #b3b3b3;
+  animation: typing 7s infinite;
+  font-size: 60px;
+  color:#fff;
+}
+
+
+.typing-text::after {
+    content: "Larry Daniels";
+    
+    overflow: hidden;
+    animation: typing 7s infinite;
+    
+}
+.typing-animation {
+  white-space: nowrap;
+}
+
+
+
+@keyframes typing {
+  0% {
+    content: "Larry Daniels";
+   width:100% ; 
+  }
+
+  
+  20% {
+    content: "Larry Daniels";
+     width:0%;
+   }
+   21% {
+    content:"Designer" ;
+    width:0%;
+   }
+
+   40%{
+    content:"Designer" ;
+    width:100%;
+   }
+
+   50%{
+    content:"Designer" ;
+    width:0%;
+   }
+
+   51%{
+    content:"Developer" ;
+    width:0%;
+   }
+
+   70%{
+    content:"Developer" ;
+    width:100%;
+   }
+   80%{
+    content:"Developer" ;
+    width:0%;
+   }
+   81%{
+    content: "Larry Daniels";
+     width:0%;
+   }
+   100% {
+    content: "Larry Daniels";
+   width:100% ; 
+   }
+
+   
+ 
+  }
+  
+
+
+  
+
+  
+  
+
+
+
+#home h1 {
+  font-size: 60px;
+  color:#fff;
+}
+#home h5 {
+    font-size: 50px;
+}
+
+@media  screen and (max-width: 768px) {
+  .typing-text {
+    font-size: 30px;
+    white-space: nowrap;
+  }
+  #home h1 {
+    font-size: 30px;
+    color:#fff;
+  }
+  #home h5 {
+      font-size: 50px;
+  }
+  
+
+} 
+@media  screen and (max-width: 284px) {
+  .typing-text {
+    font-size: 15px;
+    white-space: nowrap;
+  }
+  #home h1 {
+    font-size: 15px;
+    color:#fff;
+  }
+  #home h5 {
+      font-size: 50px;
+  }
+  
+
+} 
+
+
+
+
+.home-icons .child {
+  width: 35px;
+height: 35px;
+border-radius: 50%;
+background-color:rgba(0, 0, 0, 0.3) ;
+margin-right:5px ;
+}
+#home .home-icons a {
+color: #fff;
+font-size: 14px;
+
+}
+
+
+/* home-end */
+
+/* about-start */
+#about {
+  padding: 100px 0px;
+}
+#about .col-head h3 {
+  font-size: 30px;
+  color: #343434;
+  font-weight: 800;
+}
+
+#about .col-head p {
+  color: #999;
+    letter-spacing: 2px;
+    font-size: 14px;
+}
+#about .col-txt p {
+font-size: 15px;
+ color: #748182;
+ line-height: 1.6;
+
+ 
+}
+#about .skill-pro .progress {
+height: 24px;
+margin-bottom: 30px;
+background: #f7f7f7;
+box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.15) inset;
+}
+#about .skill-pro .progress-bar {
+  
+  background-color: black;
+  
+}
+#about .skill-pro .progress-bar h3 {
+  font-size: 13px;
+}
+
+#about .skill-pro .progress-bar p {
+  font-size: 11px;
+}
+
+#about .btns {
+  margin-top: 55px;
+}
+#about .btns .bt-1 {
+  padding: 10px 30px;
+  background-color: #1c1c1c;
+   border: 1px solid #1c1c1c;
+  border-radius: 5px;
+  font-size: 13px;
+  transition: all 0.5s;
+  color: white;
+}
+
+#about .btns .bt-1:hover {
+  background-color: #ffffff;
+  color: #1c1c1c;
+}
+
+#about .btns .bt-2 {
+  padding: 10px 30px;
+  background-color: #ffffff;
+   border: 1px solid #1c1c1c;
+  border-radius: 5px;
+  font-size: 13px;
+  transition: all 0.5s;
+  color: #1c1c1c;
+}
+
+#about .btns .bt-2:hover {
+  background-color: #1c1c1c;
+  color: white;
+}
+
+
+
+#about .col-lg-7 {
+padding: 0px 12px;
+}
+#about .demo-img::after {
+content: "";
+width: 80%;
+height: 80%;
+position: absolute;
+left: -30px;
+bottom: -30px;
+background-image: url(../img/dots.png);
+background-repeat: repeat;
+z-index: -1;
+}
+
+@media  screen and (max-width: 992px) {
+  
+  #about .demo-img {
+  margin-bottom: 75px;
+}
+
+}
+
+@media  screen and (max-width: 346.5px) {
+ 
+  #about .btns {
+    flex-direction: column;
+  }
+
+  #about .btns .bt-1 {
+    width: 50%;
+    margin-bottom: 20px;
+    padding: 10px 0px;
+    text-align: center;
+  }
+
+  #about .btns .bt-2 {
+    width: 45%;
+    padding: 10px 0px;
+    text-align: center;
+  }
+} 
+
+
+
+
+/* about-end */
+
+/* services-start */
+#services {
+padding: 100px 0px 70px;
+background-color: #f7f7f7;
+}
+#services .card-body {
+  padding: 50px 20px;
+  
+}
+#services .card {
+ margin-bottom: 30px; 
+ box-shadow: 0px 10px 30px -8px rgba(0, 0, 0, 0.1);
+}
+
+#services .card-body p {
+  color: #748182;
+  word-spacing: 2px;
+  font-size: 14px;
+  text-align: center;
+}
+#services .card-body h6 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  font-weight: 800;
+}
+
+#services .card-body .card-ico {
+  width: 70px;
+  font-size: 25px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #f4f4f4;
+  margin-bottom: 20px;
+  color: #343434;
+  transition: 0.5s 0.1s all;
+
+}
+
+#services .card-body:hover .card-ico {
+  background-color: black;
+  color: white;
+
+}
+
+
+
+
+/* service-end */
+
+/* portofolio-start */
+#portofolio {
+  padding: 100px 0px;
+}
+
+#portofolio .nav-pills .nav-link.active {
+  background-color: transparent;
+  color: #222;
+  font-size: 16px;
+  font-weight: 800;
+  
+  position: relative;
+  padding: 0;
+  
+}
+
+#portofolio .nav-pills .nav-link {
+padding: 0;
+margin-right: 40px;
+color: #222;
+font-size: 16px;
+  font-weight: 800;
+  font-family: "Poppins", sans-serif;
+}
+
+#portofolio .nav-pills .nav-link::after{
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: #222;
+  bottom: -3px;
+  left:0 ;
+  transition:  0.4s all ;
+}
+#portofolio .nav-pills .nav-link.active::after {
+  width: 100%;
+}
+#portofolio .layer {
+  position: absolute;
+  top: 5px;
+  left:5px;
+  right: 5px;
+  bottom: 5px;
+  opacity: 0;
+  background-color: rgba(255, 255, 255, 0.95);
+  transition: 0.5s 0.1s all;
+}
+
+#portofolio .img-cont:hover .layer {
+  opacity: 1;
+}
+
+#portofolio .img-cont:hover .layer h6 {
+  margin-bottom: 12px;
+}
+#portofolio .layer h6 {
+  font-size: 12px;
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+  transition: 0.5s 0.1s all;
+}
+
+#portofolio .layer .ico-gr a {
+  color: #fff;
+  font-size: 12px;
+}
+
+#portofolio .layer .ico-gr:hover a {
+  color: #1c1c1c;
+ 
+}
+
+#portofolio .layer .ico-gr {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 12px;
+  background-color: #1c1c1c;
+}
+
+#portofolio .layer .ico-gr:hover {
+  color: #1c1c1c;
+  background-color: transparent;
+  border: 1px solid #1c1c1c;
+
+}
+#portofolio .modal {
+  background-color: #0000007f;
+}
+
+#portofolio .modal-dialog {
+  max-width:650px;
+}
+#portofolio .carousel-control-next {
+  right: 0;
+}
+
+/* portofolio-end */
+
+/* Testimonials-start */
+#testimo {
+  padding: 100px 0;
+  background-color: #f7f7f7;
+}
+#testimo .sec-head h3::after{
+  content: "";
+  width: 280px;
+  height: 50%;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  background-image: url(../img/dots.png);
+  background-repeat: repeat;
+  z-index: -1;
+
+}
+
+@media (max-width: 315px) {
+  #testimo .sec-head h3::after{
+    
+    width: 190px;
+    
+  
+  }
+}
+
+#testimo .carousel-item img {
+  width: 80px;
+  margin: auto;
+}
+#testimo .carousel-item .text-testo {
+  text-align: center;
+  word-spacing: 2px;
+  line-height: 1.6;
+    margin: 0;
+    font-size: 15px;
+    color: #748182;
+   padding-left: 72px;
+   padding-right: 72px;
+}
+
+@media (max-width: 768px) {
+  #testimo .carousel-item .text-testo {
+   
+     padding-left: 0px;
+     padding-right: 0px;
+  }
+}
+
+#testimo .carousel-item h6 {
+ 
+  margin: 30px 0px 5px;
+}
+#testimo .carousel-item .text-testo2 {
+  font-size: 12px;
+  font-weight: 600;
+  color: #888;
+  margin-bottom: 60px;
+}
+#testimo .carousel-indicators .active {
+  background-color: #869791;
+}
+.carousel-indicators [data-bs-target]{
+  background-color: #D6D6D6;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+/* Testimonials-end */
+
+/* scroll-sec-start  */
+#scroll-sec {
+  padding: 100px 0px;
+}
+
+#scroll-sec .count-txt {
+  font-size: 13px;
+  color: #748182;
+  margin-bottom: 30px;
+}
+#scroll-sec i {
+  color: #343434;
+}
+#scroll-sec .count-1 {
+  font-size: 30px;
+  color: #343434;
+  animation: count1 2s ;
+}
+#scroll-sec .count-1::after {
+content: "850";
+animation: count1 2s ;
+}
+@keyframes count1 {
+  0% { content: "1"; }
+  1.176% { content: "11"; }
+  2.353% { content: "21"; }
+  3.529% { content: "31"; }
+  4.706% { content: "41"; }
+  5.882% { content: "51"; }
+  7.059% { content: "61"; }
+  8.235% { content: "71"; }
+  9.412% { content: "81"; }
+  10.588% { content: "91"; }
+  11.765% { content: "101"; }
+  12.941% { content: "111"; }
+  14.118% { content: "121"; }
+  15.294% { content: "131"; }
+  16.471% { content: "141"; }
+  17.647% { content: "151"; }
+  18.824% { content: "161"; }
+  20.000% { content: "171"; }
+  21.176% { content: "181"; }
+  22.353% { content: "191"; }
+  23.529% { content: "201"; }
+  24.706% { content: "211"; }
+  25.882% { content: "221"; }
+  27.059% { content: "231"; }
+  28.235% { content: "241"; }
+  29.412% { content: "251"; }
+  30.588% { content: "261"; }
+  31.765% { content: "271"; }
+  32.941% { content: "281"; }
+  34.118% { content: "291"; }
+  35.294% { content: "301"; }
+  36.471% { content: "311"; }
+  37.647% { content: "321"; }
+  38.824% { content: "331"; }
+  40.000% { content: "341"; }
+  41.176% { content: "351"; }
+  42.353% { content: "361"; }
+  43.529% { content: "371"; }
+  44.706% { content: "381"; }
+  45.882% { content: "391"; }
+  47.059% { content: "401"; }
+  48.235% { content: "411"; }
+  49.412% { content: "421"; }
+  50.588% { content: "431"; }
+  51.765% { content: "441"; }
+  52.941% { content: "451"; }
+  54.118% { content: "461"; }
+  55.294% { content: "471"; }
+  56.471% { content: "481"; }
+  57.647% { content: "491"; }
+  58.824% { content: "501"; }
+  60.000% { content: "511"; }
+  61.176% { content: "521"; }
+  62.353% { content: "531"; }
+  63.529% { content: "541"; }
+  64.706% { content: "551"; }
+  65.882% { content: "561"; }
+  67.059% { content: "571"; }
+  68.235% { content: "581"; }
+  69.412% { content: "591"; }
+  70.588% { content: "601"; }
+  71.765% { content: "611"; }
+  72.941% { content: "621"; }
+  74.118% { content: "631"; }
+  75.294% { content: "641"; }
+  76.471% { content: "651"; }
+  77.647% { content: "661"; }
+  78.824% { content: "671"; }
+  80.000% { content: "681"; }
+  81.176% { content: "691"; }
+  82.353% { content: "701"; }
+  83.529% { content: "711"; }
+  84.706% { content: "721"; }
+  85.882% { content: "731"; }
+  87.059% { content: "741"; }
+  88.235% { content: "751"; }
+  89.412% { content: "761"; }
+  90.588% { content: "771"; }
+  91.765% { content: "781"; }
+  92.941% { content: "791"; }
+  94.118% { content: "801"; }
+  95.294% { content: "811"; }
+  96.471% { content: "821"; }
+  97.647% { content: "831"; }
+  98.824% { content: "841"; }
+  100.000% { content: "850"; }
+}
+
+#scroll-sec .count-2 {
+  font-size: 30px;
+  color: #343434;
+  animation: count2 2s ;
+}
+#scroll-sec .count-2::after {
+content: "250";
+animation: count2 2s ;
+}
+
+@keyframes count2 {
+  0.0% { content: "1"; }
+  0.4016% { content: "2"; }
+  0.8032% { content: "3"; }
+  1.2048% { content: "4"; }
+  1.6064% { content: "5"; }
+  2.008% { content: "6"; }
+  2.4096% { content: "7"; }
+  2.8112% { content: "8"; }
+  3.2129% { content: "9"; }
+  3.6145% { content: "10"; }
+  4.0161% { content: "11"; }
+  4.4177% { content: "12"; }
+  4.8193% { content: "13"; }
+  5.2209% { content: "14"; }
+  5.6225% { content: "15"; }
+  6.0241% { content: "16"; }
+  6.4257% { content: "17"; }
+  6.8273% { content: "18"; }
+  7.2289% { content: "19"; }
+  7.6305% { content: "20"; }
+  8.0321% { content: "21"; }
+  8.4337% { content: "22"; }
+  8.8353% { content: "23"; }
+  9.2369% { content: "24"; }
+  9.6386% { content: "25"; }
+  10.0402% { content: "26"; }
+  10.4418% { content: "27"; }
+  10.8434% { content: "28"; }
+  11.245% { content: "29"; }
+  11.6466% { content: "30"; }
+  12.0482% { content: "31"; }
+  12.4498% { content: "32"; }
+  12.8514% { content: "33"; }
+  13.253% { content: "34"; }
+  13.6546% { content: "35"; }
+  14.0562% { content: "36"; }
+  14.4578% { content: "37"; }
+  14.8594% { content: "38"; }
+  15.261% { content: "39"; }
+  15.6627% { content: "40"; }
+  16.0643% { content: "41"; }
+  16.4659% { content: "42"; }
+  16.8675% { content: "43"; }
+  17.2691% { content: "44"; }
+  17.6707% { content: "45"; }
+  18.0723% { content: "46"; }
+  18.4739% { content: "47"; }
+  18.8755% { content: "48"; }
+  19.2771% { content: "49"; }
+  19.6787% { content: "50"; }
+  20.0803% { content: "51"; }
+  20.4819% { content: "52"; }
+  20.8835% { content: "53"; }
+  21.2851% { content: "54"; }
+  21.6867% { content: "55"; }
+  22.0884% { content: "56"; }
+  22.49% { content: "57"; }
+  22.8916% { content: "58"; }
+  23.2932% { content: "59"; }
+  23.6948% { content: "60"; }
+  24.0964% { content: "61"; }
+  24.498% { content: "62"; }
+  24.8996% { content: "63"; }
+  25.3012% { content: "64"; }
+  25.7028% { content: "65"; }
+  26.1044% { content: "66"; }
+  26.506% { content: "67"; }
+  26.9076% { content: "68"; }
+  27.3092% { content: "69"; }
+  27.7108% { content: "70"; }
+  28.1124% { content: "71"; }
+  28.5141% { content: "72"; }
+  28.9157% { content: "73"; }
+  29.3173% { content: "74"; }
+  29.7189% { content: "75"; }
+  30.1205% { content: "76"; }
+  30.5221% { content: "77"; }
+  30.9237% { content: "78"; }
+  31.3253% { content: "79"; }
+  31.7269% { content: "80"; }
+  32.1285% { content: "81"; }
+  32.5301% { content: "82"; }
+  32.9317% { content: "83"; }
+  33.3333% { content: "84"; }
+  33.7349% { content: "85"; }
+  34.1365% { content: "86"; }
+  34.5382% { content: "87"; }
+  34.9398% { content: "88"; }
+  35.3414% { content: "89"; }
+  35.743% { content: "90"; }
+  36.1446% { content: "91"; }
+  36.5462% { content: "92"; }
+  36.9478% { content: "93"; }
+  37.3494% { content: "94"; }
+  37.751% { content: "95"; }
+  38.1526% { content: "96"; }
+  38.5542% { content: "97"; }
+  38.9558% { content: "98"; }
+  39.3574% { content: "99"; }
+  39.759% { content: "100"; }
+  40.1606% { content: "101"; }
+  40.5622% { content: "102"; }
+  40.9639% { content: "103"; }
+  41.3655% { content: "104"; }
+  41.7671% { content: "105"; }
+  42.1687% { content: "106"; }
+  42.5703% { content: "107"; }
+  42.9719% { content: "108"; }
+  43.3735% { content: "109"; }
+  43.7751% { content: "110"; }
+  44.1767% { content: "111"; }
+  44.5783% { content: "112"; }
+  44.9799% { content: "113"; }
+  45.3815% { content: "114"; }
+  45.7831% { content: "115"; }
+  46.1847% { content: "116"; }
+  46.5863% { content: "117"; }
+  46.988% { content: "118"; }
+  47.3896% { content: "119"; }
+  47.7912% { content: "120"; }
+  48.1928% { content: "121"; }
+  48.5944% { content: "122"; }
+  48.996% { content: "123"; }
+  49.3976% { content: "124"; }
+  49.7992% { content: "125"; }
+  50.2008% { content: "126"; }
+  50.6024% { content: "127"; }
+  51.004% { content: "128"; }
+  51.4056% { content: "129"; }
+  51.8072% { content: "130"; }
+  52.2088% { content: "131"; }
+  52.6104% { content: "132"; }
+  53.012% { content: "133"; }
+  53.4137% { content: "134"; }
+  53.8153% { content: "135"; }
+  54.2169% { content: "136"; }
+  54.6185% { content: "137"; }
+  55.0201% { content: "138"; }
+  55.4217% { content: "139"; }
+  55.8233% { content: "140"; }
+  56.2249% { content: "141"; }
+  56.6265% { content: "142"; }
+  57.0281% { content: "143"; }
+  57.4297% { content: "144"; }
+  57.8313% { content: "145"; }
+  58.2329% { content: "146"; }
+  58.6345% { content: "147"; }
+  59.0361% { content: "148"; }
+  59.4378% { content: "149"; }
+  59.8394% { content: "150"; }
+  60.241% { content: "151"; }
+  60.6426% { content: "152"; }
+  61.0442% { content: "153"; }
+  61.4458% { content: "154"; }
+  61.8474% { content: "155"; }
+  62.249% { content: "156"; }
+  62.6506% { content: "157"; }
+  63.0522% { content: "158"; }
+  63.4538% { content: "159"; }
+  63.8554% { content: "160"; }
+  64.257% { content: "161"; }
+  64.6586% { content: "162"; }
+  65.0602% { content: "163"; }
+  65.4618% { content: "164"; }
+  65.8635% { content: "165"; }
+  66.2651% { content: "166"; }
+  66.6667% { content: "167"; }
+  67.0683% { content: "168"; }
+  67.4699% { content: "169"; }
+  67.8715% { content: "170"; }
+  68.2731% { content: "171"; }
+  68.6747% { content: "172"; }
+  69.0763% { content: "173"; }
+  69.4779% { content: "174"; }
+  69.8795% { content: "175"; }
+  70.2811% { content: "176"; }
+  70.6827% { content: "177"; }
+  71.0843% { content: "178"; }
+  71.4859% { content: "179"; }
+  71.8876% { content: "180"; }
+  72.2892% { content: "181"; }
+  72.6908% { content: "182"; }
+  73.0924% { content: "183"; }
+  73.494% { content: "184"; }
+  73.8956% { content: "185"; }
+  74.2972% { content: "186"; }
+  74.6988% { content: "187"; }
+  75.1004% { content: "188"; }
+  75.502% { content: "189"; }
+  75.9036% { content: "190"; }
+  76.3052% { content: "191"; }
+  76.7068% { content: "192"; }
+  77.1084% { content: "193"; }
+  77.51% { content: "194"; }
+  77.9116% { content: "195"; }
+  78.3133% { content: "196"; }
+  78.7149% { content: "197"; }
+  79.1165% { content: "198"; }
+  79.5181% { content: "199"; }
+  79.9197% { content: "200"; }
+  80.3213% { content: "201"; }
+  80.7229% { content: "202"; }
+  81.1245% { content: "203"; }
+  81.5261% { content: "204"; }
+  81.9277% { content: "205"; }
+  82.3293% { content: "206"; }
+  82.7309% { content: "207"; }
+  83.1325% { content: "208"; }
+  83.5341% { content: "209"; }
+  83.9357% { content: "210"; }
+  84.3373% { content: "211"; }
+  84.739% { content: "212"; }
+  85.1406% { content: "213"; }
+  85.5422% { content: "214"; }
+  85.9438% { content: "215"; }
+  86.3454% { content: "216"; }
+  86.747% { content: "217"; }
+  87.1486% { content: "218"; }
+  87.5502% { content: "219"; }
+  87.9518% { content: "220"; }
+  88.3534% { content: "221"; }
+  88.755% { content: "222"; }
+  89.1566% { content: "223"; }
+  89.5582% { content: "224"; }
+  89.9598% { content: "225"; }
+  90.3614% { content: "226"; }
+  90.7631% { content: "227"; }
+  91.1647% { content: "228"; }
+  91.5663% { content: "229"; }
+  91.9679% { content: "230"; }
+  92.3695% { content: "231"; }
+  92.7711% { content: "232"; }
+  93.1727% { content: "233"; }
+  93.5743% { content: "234"; }
+  93.9759% { content: "235"; }
+  94.3775% { content: "236"; }
+  94.7791% { content: "237"; }
+  95.1807% { content: "238"; }
+  95.5823% { content: "239"; }
+  95.9839% { content: "240"; }
+  96.3855% { content: "241"; }
+  96.7871% { content: "242"; }
+  97.1888% { content: "243"; }
+  97.5904% { content: "244"; }
+  97.992% { content: "245"; }
+  98.3936% { content: "246"; }
+  98.7952% { content: "247"; }
+  99.1968% { content: "248"; }
+  99.5984% { content: "249"; }
+  100.0% { content: "250"; }
+}
+
+
+#scroll-sec .count-3 {
+  font-size: 30px;
+  color: #343434;
+  animation: count3 2s ;
+}
+#scroll-sec .count-3::after {
+content: "9450";
+animation: count3 2s ;
+}
+@keyframes count3 {
+  0.0% { content: "1"; }
+  0.1059% { content: "11"; }
+  0.2119% { content: "21"; }
+  0.3178% { content: "31"; }
+  0.4237% { content: "41"; }
+  0.5297% { content: "51"; }
+  0.6356% { content: "61"; }
+  0.7415% { content: "71"; }
+  0.8475% { content: "81"; }
+  0.9534% { content: "91"; }
+  1.0593% { content: "101"; }
+  1.1653% { content: "111"; }
+  1.2712% { content: "121"; }
+  1.3771% { content: "131"; }
+  1.4831% { content: "141"; }
+  1.589% { content: "151"; }
+  1.6949% { content: "161"; }
+  1.8008% { content: "171"; }
+  1.9068% { content: "181"; }
+  2.0127% { content: "191"; }
+  2.1186% { content: "201"; }
+  2.2246% { content: "211"; }
+  2.3305% { content: "221"; }
+  2.4364% { content: "231"; }
+  2.5424% { content: "241"; }
+  2.6483% { content: "251"; }
+  2.7542% { content: "261"; }
+  2.8602% { content: "271"; }
+  2.9661% { content: "281"; }
+  3.072% { content: "291"; }
+  3.178% { content: "301"; }
+  3.2839% { content: "311"; }
+  3.3898% { content: "321"; }
+  3.4958% { content: "331"; }
+  3.6017% { content: "341"; }
+  3.7076% { content: "351"; }
+  3.8136% { content: "361"; }
+  3.9195% { content: "371"; }
+  4.0254% { content: "381"; }
+  4.1314% { content: "391"; }
+  4.2373% { content: "401"; }
+  4.3432% { content: "411"; }
+  4.4492% { content: "421"; }
+  4.5551% { content: "431"; }
+  4.661% { content: "441"; }
+  4.7669% { content: "451"; }
+  4.8729% { content: "461"; }
+  4.9788% { content: "471"; }
+  5.0847% { content: "481"; }
+  5.1907% { content: "491"; }
+  5.2966% { content: "501"; }
+  5.4025% { content: "511"; }
+  5.5085% { content: "521"; }
+  5.6144% { content: "531"; }
+  5.7203% { content: "541"; }
+  5.8263% { content: "551"; }
+  5.9322% { content: "561"; }
+  6.0381% { content: "571"; }
+  6.1441% { content: "581"; }
+  6.25% { content: "591"; }
+  6.3559% { content: "601"; }
+  6.4619% { content: "611"; }
+  6.5678% { content: "621"; }
+  6.6737% { content: "631"; }
+  6.7797% { content: "641"; }
+  6.8856% { content: "651"; }
+  6.9915% { content: "661"; }
+  7.0975% { content: "671"; }
+  7.2034% { content: "681"; }
+  7.3093% { content: "691"; }
+  7.4153% { content: "701"; }
+  7.5212% { content: "711"; }
+  7.6271% { content: "721"; }
+  7.7331% { content: "731"; }
+  7.839% { content: "741"; }
+  7.9449% { content: "751"; }
+  8.0508% { content: "761"; }
+  8.1568% { content: "771"; }
+  8.2627% { content: "781"; }
+  8.3686% { content: "791"; }
+  8.4746% { content: "801"; }
+  8.5805% { content: "811"; }
+  8.6864% { content: "821"; }
+  8.7924% { content: "831"; }
+  8.8983% { content: "841"; }
+  9.0042% { content: "851"; }
+  9.1102% { content: "861"; }
+  9.2161% { content: "871"; }
+  9.322% { content: "881"; }
+  9.428% { content: "891"; }
+  9.5339% { content: "901"; }
+  9.6398% { content: "911"; }
+  9.7458% { content: "921"; }
+  9.8517% { content: "931"; }
+  9.9576% { content: "941"; }
+  10.0636% { content: "951"; }
+  10.1695% { content: "961"; }
+  10.2754% { content: "971"; }
+  10.3814% { content: "981"; }
+  10.4873% { content: "991"; }
+  10.5932% { content: "1001"; }
+  10.6992% { content: "1011"; }
+  10.8051% { content: "1021"; }
+  10.911% { content: "1031"; }
+  11.0169% { content: "1041"; }
+  11.1229% { content: "1051"; }
+  11.2288% { content: "1061"; }
+  11.3347% { content: "1071"; }
+  11.4407% { content: "1081"; }
+  11.5466% { content: "1091"; }
+  11.6525% { content: "1101"; }
+  11.7585% { content: "1111"; }
+  11.8644% { content: "1121"; }
+  11.9703% { content: "1131"; }
+  12.0763% { content: "1141"; }
+  12.1822% { content: "1151"; }
+  12.2881% { content: "1161"; }
+  12.3941% { content: "1171"; }
+  12.5% { content: "1181"; }
+  12.6059% { content: "1191"; }
+  12.7119% { content: "1201"; }
+  12.8178% { content: "1211"; }
+  12.9237% { content: "1221"; }
+  13.0297% { content: "1231"; }
+  13.1356% { content: "1241"; }
+  13.2415% { content: "1251"; }
+  13.3475% { content: "1261"; }
+  13.4534% { content: "1271"; }
+  13.5593% { content: "1281"; }
+  13.6653% { content: "1291"; }
+  13.7712% { content: "1301"; }
+  13.8771% { content: "1311"; }
+  13.9831% { content: "1321"; }
+  14.089% { content: "1331"; }
+  14.1949% { content: "1341"; }
+  14.3008% { content: "1351"; }
+  14.4068% { content: "1361"; }
+  14.5127% { content: "1371"; }
+  14.6186% { content: "1381"; }
+  14.7246% { content: "1391"; }
+  14.8305% { content: "1401"; }
+  14.9364% { content: "1411"; }
+  15.0424% { content: "1421"; }
+  15.1483% { content: "1431"; }
+  15.2542% { content: "1441"; }
+  15.3602% { content: "1451"; }
+  15.4661% { content: "1461"; }
+  15.572% { content: "1471"; }
+  15.678% { content: "1481"; }
+  15.7839% { content: "1491"; }
+  15.8898% { content: "1501"; }
+  15.9958% { content: "1511"; }
+  16.1017% { content: "1521"; }
+  16.2076% { content: "1531"; }
+  16.3136% { content: "1541"; }
+  16.4195% { content: "1551"; }
+  16.5254% { content: "1561"; }
+  16.6314% { content: "1571"; }
+  16.7373% { content: "1581"; }
+  16.8432% { content: "1591"; }
+  16.9492% { content: "1601"; }
+  17.0551% { content: "1611"; }
+  17.161% { content: "1621"; }
+  17.2669% { content: "1631"; }
+  17.3729% { content: "1641"; }
+  17.4788% { content: "1651"; }
+  17.5847% { content: "1661"; }
+  17.6907% { content: "1671"; }
+  17.7966% { content: "1681"; }
+  17.9025% { content: "1691"; }
+  18.0085% { content: "1701"; }
+  18.1144% { content: "1711"; }
+  18.2203% { content: "1721"; }
+  18.3263% { content: "1731"; }
+  18.4322% { content: "1741"; }
+  18.5381% { content: "1751"; }
+  18.6441% { content: "1761"; }
+  18.75% { content: "1771"; }
+  18.8559% { content: "1781"; }
+  18.9619% { content: "1791"; }
+  19.0678% { content: "1801"; }
+  19.1737% { content: "1811"; }
+  19.2797% { content: "1821"; }
+  19.3856% { content: "1831"; }
+  19.4915% { content: "1841"; }
+  19.5975% { content: "1851"; }
+  19.7034% { content: "1861"; }
+  19.8093% { content: "1871"; }
+  19.9153% { content: "1881"; }
+  20.0212% { content: "1891"; }
+  20.1271% { content: "1901"; }
+  20.2331% { content: "1911"; }
+  20.339% { content: "1921"; }
+  20.4449% { content: "1931"; }
+  20.5508% { content: "1941"; }
+  20.6568% { content: "1951"; }
+  20.7627% { content: "1961"; }
+  20.8686% { content: "1971"; }
+  20.9746% { content: "1981"; }
+  21.0805% { content: "1991"; }
+  21.1864% { content: "2001"; }
+  21.2924% { content: "2011"; }
+  21.3983% { content: "2021"; }
+  21.5042% { content: "2031"; }
+  21.6102% { content: "2041"; }
+  21.7161% { content: "2051"; }
+  21.822% { content: "2061"; }
+  21.928% { content: "2071"; }
+  22.0339% { content: "2081"; }
+  22.1398% { content: "2091"; }
+  22.2458% { content: "2101"; }
+  22.3517% { content: "2111"; }
+  22.4576% { content: "2121"; }
+  22.5636% { content: "2131"; }
+  22.6695% { content: "2141"; }
+  22.7754% { content: "2151"; }
+  22.8814% { content: "2161"; }
+  22.9873% { content: "2171"; }
+  23.0932% { content: "2181"; }
+  23.1992% { content: "2191"; }
+  23.3051% { content: "2201"; }
+  23.411% { content: "2211"; }
+  23.5169% { content: "2221"; }
+  23.6229% { content: "2231"; }
+  23.7288% { content: "2241"; }
+  23.8347% { content: "2251"; }
+  23.9407% { content: "2261"; }
+  24.0466% { content: "2271"; }
+  24.1525% { content: "2281"; }
+  24.2585% { content: "2291"; }
+  24.3644% { content: "2301"; }
+  24.4703% { content: "2311"; }
+  24.5763% { content: "2321"; }
+  24.6822% { content: "2331"; }
+  24.7881% { content: "2341"; }
+  24.8941% { content: "2351"; }
+  25.0% { content: "2361"; }
+  25.1059% { content: "2371"; }
+  25.2119% { content: "2381"; }
+  25.3178% { content: "2391"; }
+  25.4237% { content: "2401"; }
+  25.5297% { content: "2411"; }
+  25.6356% { content: "2421"; }
+  25.7415% { content: "2431"; }
+  25.8475% { content: "2441"; }
+  25.9534% { content: "2451"; }
+  26.0593% { content: "2461"; }
+  26.1653% { content: "2471"; }
+  26.2712% { content: "2481"; }
+  26.3771% { content: "2491"; }
+  26.4831% { content: "2501"; }
+  26.589% { content: "2511"; }
+  26.6949% { content: "2521"; }
+  26.8008% { content: "2531"; }
+  26.9068% { content: "2541"; }
+  27.0127% { content: "2551"; }
+  27.1186% { content: "2561"; }
+  27.2246% { content: "2571"; }
+  27.3305% { content: "2581"; }
+  27.4364% { content: "2591"; }
+  27.5424% { content: "2601"; }
+  27.6483% { content: "2611"; }
+  27.7542% { content: "2621"; }
+  27.8602% { content: "2631"; }
+  27.9661% { content: "2641"; }
+  28.072% { content: "2651"; }
+  28.178% { content: "2661"; }
+  28.2839% { content: "2671"; }
+  28.3898% { content: "2681"; }
+  28.4958% { content: "2691"; }
+  28.6017% { content: "2701"; }
+  28.7076% { content: "2711"; }
+  28.8136% { content: "2721"; }
+  28.9195% { content: "2731"; }
+  29.0254% { content: "2741"; }
+  29.1314% { content: "2751"; }
+  29.2373% { content: "2761"; }
+  29.3432% { content: "2771"; }
+  29.4492% { content: "2781"; }
+  29.5551% { content: "2791"; }
+  29.661% { content: "2801"; }
+  29.7669% { content: "2811"; }
+  29.8729% { content: "2821"; }
+  29.9788% { content: "2831"; }
+  30.0847% { content: "2841"; }
+  30.1907% { content: "2851"; }
+  30.2966% { content: "2861"; }
+  30.4025% { content: "2871"; }
+  30.5085% { content: "2881"; }
+  30.6144% { content: "2891"; }
+  30.7203% { content: "2901"; }
+  30.8263% { content: "2911"; }
+  30.9322% { content: "2921"; }
+  31.0381% { content: "2931"; }
+  31.1441% { content: "2941"; }
+  31.25% { content: "2951"; }
+  31.3559% { content: "2961"; }
+  31.4619% { content: "2971"; }
+  31.5678% { content: "2981"; }
+  31.6737% { content: "2991"; }
+  31.7797% { content: "3001"; }
+  31.8856% { content: "3011"; }
+  31.9915% { content: "3021"; }
+  32.0975% { content: "3031"; }
+  32.2034% { content: "3041"; }
+  32.3093% { content: "3051"; }
+  32.4153% { content: "3061"; }
+  32.5212% { content: "3071"; }
+  32.6271% { content: "3081"; }
+  32.7331% { content: "3091"; }
+  32.839% { content: "3101"; }
+  32.9449% { content: "3111"; }
+  33.0508% { content: "3121"; }
+  33.1568% { content: "3131"; }
+  33.2627% { content: "3141"; }
+  33.3686% { content: "3151"; }
+  33.4746% { content: "3161"; }
+  33.5805% { content: "3171"; }
+  33.6864% { content: "3181"; }
+  33.7924% { content: "3191"; }
+  33.8983% { content: "3201"; }
+  34.0042% { content: "3211"; }
+  34.1102% { content: "3221"; }
+  34.2161% { content: "3231"; }
+  34.322% { content: "3241"; }
+  34.428% { content: "3251"; }
+  34.5339% { content: "3261"; }
+  34.6398% { content: "3271"; }
+  34.7458% { content: "3281"; }
+  34.8517% { content: "3291"; }
+  34.9576% { content: "3301"; }
+  35.0636% { content: "3311"; }
+  35.1695% { content: "3321"; }
+  35.2754% { content: "3331"; }
+  35.3814% { content: "3341"; }
+  35.4873% { content: "3351"; }
+  35.5932% { content: "3361"; }
+  35.6992% { content: "3371"; }
+  35.8051% { content: "3381"; }
+  35.911% { content: "3391"; }
+  36.0169% { content: "3401"; }
+  36.1229% { content: "3411"; }
+  36.2288% { content: "3421"; }
+  36.3347% { content: "3431"; }
+  36.4407% { content: "3441"; }
+  36.5466% { content: "3451"; }
+  36.6525% { content: "3461"; }
+  36.7585% { content: "3471"; }
+  36.8644% { content: "3481"; }
+  36.9703% { content: "3491"; }
+  37.0763% { content: "3501"; }
+  37.1822% { content: "3511"; }
+  37.2881% { content: "3521"; }
+  37.3941% { content: "3531"; }
+  37.5% { content: "3541"; }
+  37.6059% { content: "3551"; }
+  37.7119% { content: "3561"; }
+  37.8178% { content: "3571"; }
+  37.9237% { content: "3581"; }
+  38.0297% { content: "3591"; }
+  38.1356% { content: "3601"; }
+  38.2415% { content: "3611"; }
+  38.3475% { content: "3621"; }
+  38.4534% { content: "3631"; }
+  38.5593% { content: "3641"; }
+  38.6653% { content: "3651"; }
+  38.7712% { content: "3661"; }
+  38.8771% { content: "3671"; }
+  38.9831% { content: "3681"; }
+  39.089% { content: "3691"; }
+  39.1949% { content: "3701"; }
+  39.3008% { content: "3711"; }
+  39.4068% { content: "3721"; }
+  39.5127% { content: "3731"; }
+  39.6186% { content: "3741"; }
+  39.7246% { content: "3751"; }
+  39.8305% { content: "3761"; }
+  39.9364% { content: "3771"; }
+  40.0424% { content: "3781"; }
+  40.1483% { content: "3791"; }
+  40.2542% { content: "3801"; }
+  40.3602% { content: "3811"; }
+  40.4661% { content: "3821"; }
+  40.572% { content: "3831"; }
+  40.678% { content: "3841"; }
+  40.7839% { content: "3851"; }
+  40.8898% { content: "3861"; }
+  40.9958% { content: "3871"; }
+  41.1017% { content: "3881"; }
+  41.2076% { content: "3891"; }
+  41.3136% { content: "3901"; }
+  41.4195% { content: "3911"; }
+  41.5254% { content: "3921"; }
+  41.6314% { content: "3931"; }
+  41.7373% { content: "3941"; }
+  41.8432% { content: "3951"; }
+  41.9492% { content: "3961"; }
+  42.0551% { content: "3971"; }
+  42.161% { content: "3981"; }
+  42.2669% { content: "3991"; }
+  42.3729% { content: "4001"; }
+  42.4788% { content: "4011"; }
+  42.5847% { content: "4021"; }
+  42.6907% { content: "4031"; }
+  42.7966% { content: "4041"; }
+  42.9025% { content: "4051"; }
+  43.0085% { content: "4061"; }
+  43.1144% { content: "4071"; }
+  43.2203% { content: "4081"; }
+  43.3263% { content: "4091"; }
+  43.4322% { content: "4101"; }
+  43.5381% { content: "4111"; }
+  43.6441% { content: "4121"; }
+  43.75% { content: "4131"; }
+  43.8559% { content: "4141"; }
+  43.9619% { content: "4151"; }
+  44.0678% { content: "4161"; }
+  44.1737% { content: "4171"; }
+  44.2797% { content: "4181"; }
+  44.3856% { content: "4191"; }
+  44.4915% { content: "4201"; }
+  44.5975% { content: "4211"; }
+  44.7034% { content: "4221"; }
+  44.8093% { content: "4231"; }
+  44.9153% { content: "4241"; }
+  45.0212% { content: "4251"; }
+  45.1271% { content: "4261"; }
+  45.2331% { content: "4271"; }
+  45.339% { content: "4281"; }
+  45.4449% { content: "4291"; }
+  45.5508% { content: "4301"; }
+  45.6568% { content: "4311"; }
+  45.7627% { content: "4321"; }
+  45.8686% { content: "4331"; }
+  45.9746% { content: "4341"; }
+  46.0805% { content: "4351"; }
+  46.1864% { content: "4361"; }
+  46.2924% { content: "4371"; }
+  46.3983% { content: "4381"; }
+  46.5042% { content: "4391"; }
+  46.6102% { content: "4401"; }
+  46.7161% { content: "4411"; }
+  46.822% { content: "4421"; }
+  46.928% { content: "4431"; }
+  47.0339% { content: "4441"; }
+  47.1398% { content: "4451"; }
+  47.2458% { content: "4461"; }
+  47.3517% { content: "4471"; }
+  47.4576% { content: "4481"; }
+  47.5636% { content: "4491"; }
+  47.6695% { content: "4501"; }
+  47.7754% { content: "4511"; }
+  47.8814% { content: "4521"; }
+  47.9873% { content: "4531"; }
+  48.0932% { content: "4541"; }
+  48.1992% { content: "4551"; }
+  48.3051% { content: "4561"; }
+  48.411% { content: "4571"; }
+  48.5169% { content: "4581"; }
+  48.6229% { content: "4591"; }
+  48.7288% { content: "4601"; }
+  48.8347% { content: "4611"; }
+  48.9407% { content: "4621"; }
+  49.0466% { content: "4631"; }
+  49.1525% { content: "4641"; }
+  49.2585% { content: "4651"; }
+  49.3644% { content: "4661"; }
+  49.4703% { content: "4671"; }
+  49.5763% { content: "4681"; }
+  49.6822% { content: "4691"; }
+  49.7881% { content: "4701"; }
+  49.8941% { content: "4711"; }
+  50.0% { content: "4721"; }
+  50.1059% { content: "4731"; }
+  50.2119% { content: "4741"; }
+  50.3178% { content: "4751"; }
+  50.4237% { content: "4761"; }
+  50.5297% { content: "4771"; }
+  50.6356% { content: "4781"; }
+  50.7415% { content: "4791"; }
+  50.8475% { content: "4801"; }
+  50.9534% { content: "4811"; }
+  51.0593% { content: "4821"; }
+  51.1653% { content: "4831"; }
+  51.2712% { content: "4841"; }
+  51.3771% { content: "4851"; }
+  51.4831% { content: "4861"; }
+  51.589% { content: "4871"; }
+  51.6949% { content: "4881"; }
+  51.8008% { content: "4891"; }
+  51.9068% { content: "4901"; }
+  52.0127% { content: "4911"; }
+  52.1186% { content: "4921"; }
+  52.2246% { content: "4931"; }
+  52.3305% { content: "4941"; }
+  52.4364% { content: "4951"; }
+  52.5424% { content: "4961"; }
+  52.6483% { content: "4971"; }
+  52.7542% { content: "4981"; }
+  52.8602% { content: "4991"; }
+  52.9661% { content: "5001"; }
+  53.072% { content: "5011"; }
+  53.178% { content: "5021"; }
+  53.2839% { content: "5031"; }
+  53.3898% { content: "5041"; }
+  53.4958% { content: "5051"; }
+  53.6017% { content: "5061"; }
+  53.7076% { content: "5071"; }
+  53.8136% { content: "5081"; }
+  53.9195% { content: "5091"; }
+  54.0254% { content: "5101"; }
+  54.1314% { content: "5111"; }
+  54.2373% { content: "5121"; }
+  54.3432% { content: "5131"; }
+  54.4492% { content: "5141"; }
+  54.5551% { content: "5151"; }
+  54.661% { content: "5161"; }
+  54.7669% { content: "5171"; }
+  54.8729% { content: "5181"; }
+  54.9788% { content: "5191"; }
+  55.0847% { content: "5201"; }
+  55.1907% { content: "5211"; }
+  55.2966% { content: "5221"; }
+  55.4025% { content: "5231"; }
+  55.5085% { content: "5241"; }
+  55.6144% { content: "5251"; }
+  55.7203% { content: "5261"; }
+  55.8263% { content: "5271"; }
+  55.9322% { content: "5281"; }
+  56.0381% { content: "5291"; }
+  56.1441% { content: "5301"; }
+  56.25% { content: "5311"; }
+  56.3559% { content: "5321"; }
+  56.4619% { content: "5331"; }
+  56.5678% { content: "5341"; }
+  56.6737% { content: "5351"; }
+  56.7797% { content: "5361"; }
+  56.8856% { content: "5371"; }
+  56.9915% { content: "5381"; }
+  57.0975% { content: "5391"; }
+  57.2034% { content: "5401"; }
+  57.3093% { content: "5411"; }
+  57.4153% { content: "5421"; }
+  57.5212% { content: "5431"; }
+  57.6271% { content: "5441"; }
+  57.7331% { content: "5451"; }
+  57.839% { content: "5461"; }
+  57.9449% { content: "5471"; }
+  58.0508% { content: "5481"; }
+  58.1568% { content: "5491"; }
+  58.2627% { content: "5501"; }
+  58.3686% { content: "5511"; }
+  58.4746% { content: "5521"; }
+  58.5805% { content: "5531"; }
+  58.6864% { content: "5541"; }
+  58.7924% { content: "5551"; }
+  58.8983% { content: "5561"; }
+  59.0042% { content: "5571"; }
+  59.1102% { content: "5581"; }
+  59.2161% { content: "5591"; }
+  59.322% { content: "5601"; }
+  59.428% { content: "5611"; }
+  59.5339% { content: "5621"; }
+  59.6398% { content: "5631"; }
+  59.7458% { content: "5641"; }
+  59.8517% { content: "5651"; }
+  59.9576% { content: "5661"; }
+  60.0636% { content: "5671"; }
+  60.1695% { content: "5681"; }
+  60.2754% { content: "5691"; }
+  60.3814% { content: "5701"; }
+  60.4873% { content: "5711"; }
+  60.5932% { content: "5721"; }
+  60.6992% { content: "5731"; }
+  60.8051% { content: "5741"; }
+  60.911% { content: "5751"; }
+  61.0169% { content: "5761"; }
+  61.1229% { content: "5771"; }
+  61.2288% { content: "5781"; }
+  61.3347% { content: "5791"; }
+  61.4407% { content: "5801"; }
+  61.5466% { content: "5811"; }
+  61.6525% { content: "5821"; }
+  61.7585% { content: "5831"; }
+  61.8644% { content: "5841"; }
+  61.9703% { content: "5851"; }
+  62.0763% { content: "5861"; }
+  62.1822% { content: "5871"; }
+  62.2881% { content: "5881"; }
+  62.3941% { content: "5891"; }
+  62.5% { content: "5901"; }
+  62.6059% { content: "5911"; }
+  62.7119% { content: "5921"; }
+  62.8178% { content: "5931"; }
+  62.9237% { content: "5941"; }
+  63.0297% { content: "5951"; }
+  63.1356% { content: "5961"; }
+  63.2415% { content: "5971"; }
+  63.3475% { content: "5981"; }
+  63.4534% { content: "5991"; }
+  63.5593% { content: "6001"; }
+  63.6653% { content: "6011"; }
+  63.7712% { content: "6021"; }
+  63.8771% { content: "6031"; }
+  63.9831% { content: "6041"; }
+  64.089% { content: "6051"; }
+  64.1949% { content: "6061"; }
+  64.3008% { content: "6071"; }
+  64.4068% { content: "6081"; }
+  64.5127% { content: "6091"; }
+  64.6186% { content: "6101"; }
+  64.7246% { content: "6111"; }
+  64.8305% { content: "6121"; }
+  64.9364% { content: "6131"; }
+  65.0424% { content: "6141"; }
+  65.1483% { content: "6151"; }
+  65.2542% { content: "6161"; }
+  65.3602% { content: "6171"; }
+  65.4661% { content: "6181"; }
+  65.572% { content: "6191"; }
+  65.678% { content: "6201"; }
+  65.7839% { content: "6211"; }
+  65.8898% { content: "6221"; }
+  65.9958% { content: "6231"; }
+  66.1017% { content: "6241"; }
+  66.2076% { content: "6251"; }
+  66.3136% { content: "6261"; }
+  66.4195% { content: "6271"; }
+  66.5254% { content: "6281"; }
+  66.6314% { content: "6291"; }
+  66.7373% { content: "6301"; }
+  66.8432% { content: "6311"; }
+  66.9492% { content: "6321"; }
+  67.0551% { content: "6331"; }
+  67.161% { content: "6341"; }
+  67.2669% { content: "6351"; }
+  67.3729% { content: "6361"; }
+  67.4788% { content: "6371"; }
+  67.5847% { content: "6381"; }
+  67.6907% { content: "6391"; }
+  67.7966% { content: "6401"; }
+  67.9025% { content: "6411"; }
+  68.0085% { content: "6421"; }
+  68.1144% { content: "6431"; }
+  68.2203% { content: "6441"; }
+  68.3263% { content: "6451"; }
+  68.4322% { content: "6461"; }
+  68.5381% { content: "6471"; }
+  68.6441% { content: "6481"; }
+  68.75% { content: "6491"; }
+  68.8559% { content: "6501"; }
+  68.9619% { content: "6511"; }
+  69.0678% { content: "6521"; }
+  69.1737% { content: "6531"; }
+  69.2797% { content: "6541"; }
+  69.3856% { content: "6551"; }
+  69.4915% { content: "6561"; }
+  69.5975% { content: "6571"; }
+  69.7034% { content: "6581"; }
+  69.8093% { content: "6591"; }
+  69.9153% { content: "6601"; }
+  70.0212% { content: "6611"; }
+  70.1271% { content: "6621"; }
+  70.2331% { content: "6631"; }
+  70.339% { content: "6641"; }
+  70.4449% { content: "6651"; }
+  70.5508% { content: "6661"; }
+  70.6568% { content: "6671"; }
+  70.7627% { content: "6681"; }
+  70.8686% { content: "6691"; }
+  70.9746% { content: "6701"; }
+  71.0805% { content: "6711"; }
+  71.1864% { content: "6721"; }
+  71.2924% { content: "6731"; }
+  71.3983% { content: "6741"; }
+  71.5042% { content: "6751"; }
+  71.6102% { content: "6761"; }
+  71.7161% { content: "6771"; }
+  71.822% { content: "6781"; }
+  71.928% { content: "6791"; }
+  72.0339% { content: "6801"; }
+  72.1398% { content: "6811"; }
+  72.2458% { content: "6821"; }
+  72.3517% { content: "6831"; }
+  72.4576% { content: "6841"; }
+  72.5636% { content: "6851"; }
+  72.6695% { content: "6861"; }
+  72.7754% { content: "6871"; }
+  72.8814% { content: "6881"; }
+  72.9873% { content: "6891"; }
+  73.0932% { content: "6901"; }
+  73.1992% { content: "6911"; }
+  73.3051% { content: "6921"; }
+  73.411% { content: "6931"; }
+  73.5169% { content: "6941"; }
+  73.6229% { content: "6951"; }
+  73.7288% { content: "6961"; }
+  73.8347% { content: "6971"; }
+  73.9407% { content: "6981"; }
+  74.0466% { content: "6991"; }
+  74.1525% { content: "7001"; }
+  74.2585% { content: "7011"; }
+  74.3644% { content: "7021"; }
+  74.4703% { content: "7031"; }
+  74.5763% { content: "7041"; }
+  74.6822% { content: "7051"; }
+  74.7881% { content: "7061"; }
+  74.8941% { content: "7071"; }
+  75.0% { content: "7081"; }
+  75.1059% { content: "7091"; }
+  75.2119% { content: "7101"; }
+  75.3178% { content: "7111"; }
+  75.4237% { content: "7121"; }
+  75.5297% { content: "7131"; }
+  75.6356% { content: "7141"; }
+  75.7415% { content: "7151"; }
+  75.8475% { content: "7161"; }
+  75.9534% { content: "7171"; }
+  76.0593% { content: "7181"; }
+  76.1653% { content: "7191"; }
+  76.2712% { content: "7201"; }
+  76.3771% { content: "7211"; }
+  76.4831% { content: "7221"; }
+  76.589% { content: "7231"; }
+  76.6949% { content: "7241"; }
+  76.8008% { content: "7251"; }
+  76.9068% { content: "7261"; }
+  77.0127% { content: "7271"; }
+  77.1186% { content: "7281"; }
+  77.2246% { content: "7291"; }
+  77.3305% { content: "7301"; }
+  77.4364% { content: "7311"; }
+  77.5424% { content: "7321"; }
+  77.6483% { content: "7331"; }
+  77.7542% { content: "7341"; }
+  77.8602% { content: "7351"; }
+  77.9661% { content: "7361"; }
+  78.072% { content: "7371"; }
+  78.178% { content: "7381"; }
+  78.2839% { content: "7391"; }
+  78.3898% { content: "7401"; }
+  78.4958% { content: "7411"; }
+  78.6017% { content: "7421"; }
+  78.7076% { content: "7431"; }
+  78.8136% { content: "7441"; }
+  78.9195% { content: "7451"; }
+  79.0254% { content: "7461"; }
+  79.1314% { content: "7471"; }
+  79.2373% { content: "7481"; }
+  79.3432% { content: "7491"; }
+  79.4492% { content: "7501"; }
+  79.5551% { content: "7511"; }
+  79.661% { content: "7521"; }
+  79.7669% { content: "7531"; }
+  79.8729% { content: "7541"; }
+  79.9788% { content: "7551"; }
+  80.0847% { content: "7561"; }
+  80.1907% { content: "7571"; }
+  80.2966% { content: "7581"; }
+  80.4025% { content: "7591"; }
+  80.5085% { content: "7601"; }
+  80.6144% { content: "7611"; }
+  80.7203% { content: "7621"; }
+  80.8263% { content: "7631"; }
+  80.9322% { content: "7641"; }
+  81.0381% { content: "7651"; }
+  81.1441% { content: "7661"; }
+  81.25% { content: "7671"; }
+  81.3559% { content: "7681"; }
+  81.4619% { content: "7691"; }
+  81.5678% { content: "7701"; }
+  81.6737% { content: "7711"; }
+  81.7797% { content: "7721"; }
+  81.8856% { content: "7731"; }
+  81.9915% { content: "7741"; }
+  82.0975% { content: "7751"; }
+  82.2034% { content: "7761"; }
+  82.3093% { content: "7771"; }
+  82.4153% { content: "7781"; }
+  82.5212% { content: "7791"; }
+  82.6271% { content: "7801"; }
+  82.7331% { content: "7811"; }
+  82.839% { content: "7821"; }
+  82.9449% { content: "7831"; }
+  83.0508% { content: "7841"; }
+  83.1568% { content: "7851"; }
+  83.2627% { content: "7861"; }
+  83.3686% { content: "7871"; }
+  83.4746% { content: "7881"; }
+  83.5805% { content: "7891"; }
+  83.6864% { content: "7901"; }
+  83.7924% { content: "7911"; }
+  83.8983% { content: "7921"; }
+  84.0042% { content: "7931"; }
+  84.1102% { content: "7941"; }
+  84.2161% { content: "7951"; }
+  84.322% { content: "7961"; }
+  84.428% { content: "7971"; }
+  84.5339% { content: "7981"; }
+  84.6398% { content: "7991"; }
+  84.7458% { content: "8001"; }
+  84.8517% { content: "8011"; }
+  84.9576% { content: "8021"; }
+  85.0636% { content: "8031"; }
+  85.1695% { content: "8041"; }
+  85.2754% { content: "8051"; }
+  85.3814% { content: "8061"; }
+  85.4873% { content: "8071"; }
+  85.5932% { content: "8081"; }
+  85.6992% { content: "8091"; }
+  85.8051% { content: "8101"; }
+  85.911% { content: "8111"; }
+  86.0169% { content: "8121"; }
+  86.1229% { content: "8131"; }
+  86.2288% { content: "8141"; }
+  86.3347% { content: "8151"; }
+  86.4407% { content: "8161"; }
+  86.5466% { content: "8171"; }
+  86.6525% { content: "8181"; }
+  86.7585% { content: "8191"; }
+  86.8644% { content: "8201"; }
+  86.9703% { content: "8211"; }
+  87.0763% { content: "8221"; }
+  87.1822% { content: "8231"; }
+  87.2881% { content: "8241"; }
+  87.3941% { content: "8251"; }
+  87.5% { content: "8261"; }
+  87.6059% { content: "8271"; }
+  87.7119% { content: "8281"; }
+  87.8178% { content: "8291"; }
+  87.9237% { content: "8301"; }
+  88.0297% { content: "8311"; }
+  88.1356% { content: "8321"; }
+  88.2415% { content: "8331"; }
+  88.3475% { content: "8341"; }
+  88.4534% { content: "8351"; }
+  88.5593% { content: "8361"; }
+  88.6653% { content: "8371"; }
+  88.7712% { content: "8381"; }
+  88.8771% { content: "8391"; }
+  88.9831% { content: "8401"; }
+  89.089% { content: "8411"; }
+  89.1949% { content: "8421"; }
+  89.3008% { content: "8431"; }
+  89.4068% { content: "8441"; }
+  89.5127% { content: "8451"; }
+  89.6186% { content: "8461"; }
+  89.7246% { content: "8471"; }
+  89.8305% { content: "8481"; }
+  89.9364% { content: "8491"; }
+  90.0424% { content: "8501"; }
+  90.1483% { content: "8511"; }
+  90.2542% { content: "8521"; }
+  90.3602% { content: "8531"; }
+  90.4661% { content: "8541"; }
+  90.572% { content: "8551"; }
+  90.678% { content: "8561"; }
+  90.7839% { content: "8571"; }
+  90.8898% { content: "8581"; }
+  90.9958% { content: "8591"; }
+  91.1017% { content: "8601"; }
+  91.2076% { content: "8611"; }
+  91.3136% { content: "8621"; }
+  91.4195% { content: "8631"; }
+  91.5254% { content: "8641"; }
+  91.6314% { content: "8651"; }
+  91.7373% { content: "8661"; }
+  91.8432% { content: "8671"; }
+  91.9492% { content: "8681"; }
+  92.0551% { content: "8691"; }
+  92.161% { content: "8701"; }
+  92.2669% { content: "8711"; }
+  92.3729% { content: "8721"; }
+  92.4788% { content: "8731"; }
+  92.5847% { content: "8741"; }
+  92.6907% { content: "8751"; }
+  92.7966% { content: "8761"; }
+  92.9025% { content: "8771"; }
+  93.0085% { content: "8781"; }
+  93.1144% { content: "8791"; }
+  93.2203% { content: "8801"; }
+  93.3263% { content: "8811"; }
+  93.4322% { content: "8821"; }
+  93.5381% { content: "8831"; }
+  93.6441% { content: "8841"; }
+  93.75% { content: "8851"; }
+  93.8559% { content: "8861"; }
+  93.9619% { content: "8871"; }
+  94.0678% { content: "8881"; }
+  94.1737% { content: "8891"; }
+  94.2797% { content: "8901"; }
+  94.3856% { content: "8911"; }
+  94.4915% { content: "8921"; }
+  94.5975% { content: "8931"; }
+  94.7034% { content: "8941"; }
+  94.8093% { content: "8951"; }
+  94.9153% { content: "8961"; }
+  95.0212% { content: "8971"; }
+  95.1271% { content: "8981"; }
+  95.2331% { content: "8991"; }
+  95.339% { content: "9001"; }
+  95.4449% { content: "9011"; }
+  95.5508% { content: "9021"; }
+  95.6568% { content: "9031"; }
+  95.7627% { content: "9041"; }
+  95.8686% { content: "9051"; }
+  95.9746% { content: "9061"; }
+  96.0805% { content: "9071"; }
+  96.1864% { content: "9081"; }
+  96.2924% { content: "9091"; }
+  96.3983% { content: "9101"; }
+  96.5042% { content: "9111"; }
+  96.6102% { content: "9121"; }
+  96.7161% { content: "9131"; }
+  96.822% { content: "9141"; }
+  96.928% { content: "9151"; }
+  97.0339% { content: "9161"; }
+  97.1398% { content: "9171"; }
+  97.2458% { content: "9181"; }
+  97.3517% { content: "9191"; }
+  97.4576% { content: "9201"; }
+  97.5636% { content: "9211"; }
+  97.6695% { content: "9221"; }
+  97.7754% { content: "9231"; }
+  97.8814% { content: "9241"; }
+  97.9873% { content: "9251"; }
+  98.0932% { content: "9261"; }
+  98.1992% { content: "9271"; }
+  98.3051% { content: "9281"; }
+  98.411% { content: "9291"; }
+  98.5169% { content: "9301"; }
+  98.6229% { content: "9311"; }
+  98.7288% { content: "9321"; }
+  98.8347% { content: "9331"; }
+  98.9407% { content: "9341"; }
+  99.0466% { content: "9351"; }
+  99.1525% { content: "9361"; }
+  99.2585% { content: "9371"; }
+  99.3644% { content: "9381"; }
+  99.4703% { content: "9391"; }
+  99.5763% { content: "9401"; }
+  99.6822% { content: "9411"; }
+  99.7881% { content: "9421"; }
+  99.8941% { content: "9431"; }
+  100.0% { content: "9441"; }
+}
+
+
+#scroll-sec .count-4 {
+  font-size: 30px;
+  color: #343434;
+  animation: count4 2s ;
+}
+#scroll-sec .count-4::after {
+content: "780";
+animation: count4 2s ;
+}
+@keyframes count4 {
+  0% { content: "1"; }
+  1.28% { content: "11"; }
+  2.56% { content: "21"; }
+  3.85% { content: "31"; }
+  5.13% { content: "41"; }
+  6.41% { content: "51"; }
+  7.69% { content: "61"; }
+  8.97% { content: "71"; }
+  10.26% { content: "81"; }
+  11.54% { content: "91"; }
+  12.82% { content: "101"; }
+  14.10% { content: "111"; }
+  15.38% { content: "121"; }
+  16.67% { content: "131"; }
+  17.95% { content: "141"; }
+  19.23% { content: "151"; }
+  20.51% { content: "161"; }
+  21.79% { content: "171"; }
+  23.08% { content: "181"; }
+  24.36% { content: "191"; }
+  25.64% { content: "201"; }
+  26.92% { content: "211"; }
+  28.21% { content: "221"; }
+  29.49% { content: "231"; }
+  30.77% { content: "241"; }
+  32.05% { content: "251"; }
+  33.33% { content: "261"; }
+  34.62% { content: "271"; }
+  35.90% { content: "281"; }
+  37.18% { content: "291"; }
+  38.46% { content: "301"; }
+  39.74% { content: "311"; }
+  41.03% { content: "321"; }
+  42.31% { content: "331"; }
+  43.59% { content: "341"; }
+  44.87% { content: "351"; }
+  46.15% { content: "361"; }
+  47.44% { content: "371"; }
+  48.72% { content: "381"; }
+  50.00% { content: "391"; }
+  51.28% { content: "401"; }
+  52.56% { content: "411"; }
+  53.85% { content: "421"; }
+  55.13% { content: "431"; }
+  56.41% { content: "441"; }
+  57.69% { content: "451"; }
+  58.97% { content: "461"; }
+  60.26% { content: "471"; }
+  61.54% { content: "481"; }
+  62.82% { content: "491"; }
+  64.10% { content: "501"; }
+  65.38% { content: "511"; }
+  66.67% { content: "521"; }
+  67.95% { content: "531"; }
+  69.23% { content: "541"; }
+  70.51% { content: "551"; }
+  71.79% { content: "561"; }
+  73.08% { content: "571"; }
+  74.36% { content: "581"; }
+  75.64% { content: "591"; }
+  76.92% { content: "601"; }
+  78.21% { content: "611"; }
+  79.49% { content: "621"; }
+  80.77% { content: "631"; }
+  82.05% { content: "641"; }
+  83.33% { content: "651"; }
+  84.62% { content: "661"; }
+  85.90% { content: "671"; }
+  87.18% { content: "681"; }
+  88.46% { content: "691"; }
+  89.74% { content: "701"; }
+  91.03% { content: "711"; }
+  92.31% { content: "721"; }
+  93.59% { content: "731"; }
+  94.87% { content: "741"; }
+  96.15% { content: "751"; }
+  97.44% { content: "761"; }
+  98.72% { content: "771"; }
+  100% { content: "781"; }
+}
+
+/* scroll-sec-end  */
+
+/* team-start */
+#team {
+  padding: 100px 0px;
+  background-color: #f7f7f7;
+}
+
+#team .card-body {
+background-color: rgba(52, 52, 52,.8);
+padding: 25px;
+
+}
+#team .card-body h4 {
+  color: #fff;
+  font-size: 25px;
+}
+
+#team .card-body h5 {
+  color: #fff;
+  font-size: 20px;
+}
+
+#team .layer {
+  position: absolute;
+  top: 5px;
+  left:5px;
+  right: 5px;
+  bottom: 5px;
+  opacity: 0;
+  background-color: rgba(255, 255, 255, 0.95);
+  transition: 0.5s 0.1s all;
+  transform: rotateY(180deg) scale(0.5, 0.5);
+}
+#team .img-cont {
+ overflow: hidden; 
+}
+
+#team .img-cont img {
+  transition: 0.5s 0.1s all; 
+}
+#team .img-cont:hover img {
+  transform: scale(1.19);
+}
+
+#team .img-cont:hover .layer {
+  opacity: 1;
+  transform: rotateY(0deg) scale(1, 1);
+}
+
+
+
+#team .layer .ico-gr a {
+  color: #fff;
+  font-size: 16px;
+}
+
+#team .layer .ico-gr:hover a {
+  color: #1c1c1c;
+ 
+}
+
+#team .layer .ico-gr {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 12px;
+  background-color: #1c1c1c;
+}
+
+#team .layer .ico-gr:hover {
+  color: #1c1c1c;
+  background-color: transparent;
+  border: 1px solid #1c1c1c;
+
+}
+
+/* team-end */
+
+/* contact-start */
+#contact {
+  padding: 100px 0px;
+}
+
+#contact .sec-head {
+  margin-bottom: 80px;
+}
+
+#contact .demo .card-ico {
+  width: 62px;
+  font-size: 25px;
+  height: 62px;
+  border-radius: 50%;
+  background-color: #f4f4f4;
+  margin-bottom: 20px;
+  color: #343434;
+  transition: 0.5s 0.1s all;
+
+}
+
+#contact .demo:hover .card-ico {
+  background-color: black;
+  color: white;
+
+}
+
+#contact .demo h6 {
+ color: #343434;
+ margin-bottom: 10px;
+}
+
+#contact .demo p {
+font-size: 15px;
+    color: #748182;  
+}
+#contact input {
+  background-color: #f4f4f4;
+  padding: 10px;
+}
+#contact textarea {
+  background-color: #f4f4f4;
+  padding: 10px;
+}
+
+#contact input:focus {
+  border: none;
+  box-shadow: none;
+}
+#contact textarea {
+  background-color: #f4f4f4;
+  padding: 10px;
+}
+
+#contact textarea:focus {
+  border: none;
+  box-shadow: none;
+}
+
+#contact .btn-form {
+  padding: 10px 40px;
+  background-color: #1c1c1c;
+   border: 1px solid #1c1c1c;
+  border-radius: 5px;
+  font-size: 13px;
+  transition: all 0.5s;
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+#contact .btn-form:hover {
+  background-color: #ffffff;
+  color: #1c1c1c;
+}
+
+
+
+
+
+
+/* contact-end */
+
+#footer {
+padding: 30px;
+background-color: #1c1c1c;
+}
+
+#footer p {
+  color: #748182;
+  font-size: 13px;
+  font-weight: 400;
+  }
